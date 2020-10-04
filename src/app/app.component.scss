@@ -1,0 +1,15 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.taskBoard{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border:1px solid red;
+}
+.misc{
+  height:33vh;
+  border:1px solid green;
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
