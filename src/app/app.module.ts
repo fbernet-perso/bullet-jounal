@@ -48,6 +48,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 import { DayComponentComponent } from './day-component/day-component.component';
+import { DndListModule } from 'ngx-drag-and-drop-lists';
 
 
 @NgModule({
@@ -62,7 +63,7 @@ import { DayComponentComponent } from './day-component/day-component.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-
+    DndListModule,
   ],
 
   exports: [

@@ -12,6 +12,8 @@
   </button>
 </mat-toolbar>
 <div class="taskBoard">
+  <div class="week">
     <day-component *ngFor="let day of currentWeek" [currentDate]="day"></day-component>
+  </div>
   <div class="misc"></div>
 </div>
