@@ -11,9 +11,11 @@
     <mat-icon>note_add</mat-icon>
   </button>
 </mat-toolbar>
-<div class="taskBoard">
+<div class="taskBoard" cdkDropListGroup>
   <div class="week">
     <day-component *ngFor="let day of currentWeek" [currentDate]="day"></day-component>
   </div>
-  <div class="misc"></div>
+  <div class="misc">
+    <misc-component></misc-component>
+  </div>
 </div>

@@ -3,12 +3,11 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 
 
 @Component({
-  selector: 'day-component',
-  templateUrl: './day-component.component.html',
-  styleUrls: ['./day-component.component.scss']
+  selector: 'misc-component',
+  templateUrl: './misc-component.component.html',
+  styleUrls: ['./misc-component.component.scss']
 })
-export class DayComponentComponent implements OnInit {
-//https://material.angular.io/cdk/drag-drop/overview
+export class MiscComponentComponent implements OnInit {
   done = [
     'Get up',
     'Brush teeth',
@@ -16,15 +15,10 @@ export class DayComponentComponent implements OnInit {
     'Check e-mail',
     'Walk dog,again, a lot, and again, and again again'
   ];
-
-  @Input() public currentDate: Date;
   constructor() { }
-
-
-
+//https://stackblitz.com/edit/angular-nuiviw?file=src%2Fapp%2Fapp.component.css
   ngOnInit(): void {
   }
-
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);

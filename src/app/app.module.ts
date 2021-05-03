@@ -48,13 +48,14 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 import { DayComponentComponent } from './day-component/day-component.component';
-import { DndListModule } from 'ngx-drag-and-drop-lists';
+import { MiscComponentComponent } from './misc-component/misc-component.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DayComponentComponent
+    DayComponentComponent,
+    MiscComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -63,14 +64,11 @@ import { DndListModule } from 'ngx-drag-and-drop-lists';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    DndListModule,
+    DragDropModule,
+    MatCardModule,
   ],
 
-  exports: [
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-  ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

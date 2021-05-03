@@ -1,0 +1,7 @@
+<div class="area">
+      <div cdkDropList #doneList="cdkDropList" cdkDropListOrientation="horizontal" [cdkDropListData]="done" class="list"
+            (cdkDropListDropped)="drop($event)">
+            <mat-card class="box" *ngFor="let item of done" cdkDrag>{{item}}</mat-card>
+      </div>
+
+</div>
